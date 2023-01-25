@@ -1,7 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "CatAnimation.h"
+#include "Animations/CatAnimation.h"
 #include "Kismet/KismetMathLibrary.h"
 
 

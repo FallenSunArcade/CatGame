@@ -1,5 +1,5 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 
-#include "CatsGameModeBase.h"
+#include "GameModes/CatsGameModeBase.h"
 
