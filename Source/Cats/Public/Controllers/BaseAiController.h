@@ -18,6 +18,6 @@ public:
 	virtual void BeginPlay() override;
 
 private:
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, Category = "Behavior Tree")
 	UBehaviorTree* BehaviorTree;
 };
