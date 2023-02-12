@@ -42,10 +42,8 @@ void ABaseMouse::Tick(float DeltaTime)
 
 	FHitResult Hit;
 	FloatingPawnMovement->SafeMoveUpdatedComponent(MouseGravity, CapsuleComponent->GetRelativeRotation(), true, Hit);
-
-	FVector  CurrentVelocity = GetVelocity();
-
-	if (!CurrentVelocity.IsNearlyZero())
+	
+	if (const FVector CurrentVelocity = GetVelocity(); !CurrentVelocity.IsNearlyZero())
 	{
 		FRotator r = CurrentVelocity.Rotation();
 		r.Pitch = 0.f;
